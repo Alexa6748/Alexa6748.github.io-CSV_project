@@ -1,7 +1,12 @@
+var script = document.createElement('script');
+script.src = 'https://code.jquery.com/jquery-3.4.1.min.js';
+script.type = 'text/javascript';
+document.getElementsByTagName('head')[0].appendChild(script);
+
 $.ajax({
     url: 'csv_data.csv',
     dataType: 'text',
-}).done(successFunction);
+}).done(successFunction); 
 
 function successFunction(data) {
     var allRows = data.split(/\r?\n|\r/);
