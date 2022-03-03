@@ -4,7 +4,7 @@ script.type = 'text/javascript';
 document.getElementsByTagName('head')[0].appendChild(script);
 
 $.ajax({
-    url: 'csv_data.csv',
+    url: 'https://github.com/Alexa6748/Alexa6748.github.io-CSV_project/blob/main/csv_data.csv',
     dataType: 'text',
 }).done(successFunction); 
 
